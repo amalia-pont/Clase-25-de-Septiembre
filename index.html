@@ -53,10 +53,10 @@
 
                     qs.forEach((x) => {
                         // Nota: usar += con innerHTML dentro de un forEach funciona por ahora, pero en listas grandes es poco eficiente y seguro. 
-						if(x.employer_reputation =<67){
+						if(x.employer_reputation <= 67){
                         uno.innerHTML += `<li>${x.name} - ${x.location}</li>`;
 						}
-						if(x.academic_reputation =<72){
+						if(x.academic_reputation <= 72){
                         otro.innerHTML += `<li>${x.location} - ${x.location}</li>`;
 						}
                     });
